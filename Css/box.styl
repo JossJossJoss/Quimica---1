@@ -1,0 +1,194 @@
+back = #ABBCBE
+head = #284244
+bar = rgba(203, 238, 63, 0.8)
+bh = rgba(245, 245, 245, 0.5)
+elementos = rgba(255, 255, 255, 0.82)
+no-metal = #9AE748
+metal = #F3E542
+metaloide = #FFB800
+griso = #3D3D3D
+atom = rgba(238, 12, 12, 0.9)
+.head
+	font-size 3em
+	
+	color rgba(245,245,245,0.7) 
+	padding-top 1em
+@font-face{
+	font-family:quicksand-dash;
+	src:url(Quicksand-LightItalic.otf);
+} 
+body
+	background-color back
+	font-family quicksand-dash
+	font-size 16px
+header
+	background-color head
+	height 10em
+	text-align center
+	position relative
+	.logo
+		border-radius 50%
+		width 5em
+		height 5em
+		background-color back
+		position absolute
+		top 2.5em
+		left 8px
+		text-align center
+		h2
+			padding 0
+			margin 0
+			font-size 60px
+			color white
+			
+ul
+	margin 0
+	padding 6px 20px
+	text-align center
+.item 
+	display inline-block
+	font-size 18px	
+	width 30%
+.item:hover
+	background-color bh
+	color head
+
+.med
+	border-left 1.5px solid head
+	border-right 1.5px solid head
+.active
+	background-color rgba(0, 0, 0, .3)
+	color #EEE
+.menu
+	background-color bar
+	height 2em
+	position relative 
+	
+	border-bottom 0.15em solid rgba(40, 66, 68, 0.8)
+	&:before
+		border-bottom 16px solid transparent
+		border-top 16px solid transparent
+		border-left 12px solid head
+		content ""
+		position absolute
+		top 0 
+		left 0
+	&:after
+		border-bottom 16px solid transparent
+		border-top 16px solid transparent
+		border-right 12px solid head
+		content ""
+		position absolute
+		top 0 
+		right 0	
+.content
+	padding 0.5em
+.box
+	width 100%
+	height 7em
+	margin 0
+	background-color elementos
+	border 1.5px solid head
+	margin 1em 0
+	position relative
+	vertical-aling top
+.elemento 
+	width 7em
+	height 100%
+	background-color head
+	position absolute
+	display inline-block
+
+.s
+	margin 0 
+	padding 10% 0 
+	font-size 4em
+	color #EEE
+	text-shadow 0.5px 0.5px 3px black
+
+.nombre
+	color griso
+	font-size 2.2em
+	margin 0
+	position absolute
+	right 5% 
+	top 15%
+.num 
+	background-color atom
+	width 1.8em
+	height 1.8em
+	border-radius 50%
+	position inherit
+.num > p
+	color #EEE
+	margin 21% 0
+	font-family sans-serif
+
+
+
+.metal
+	width 90%
+	height 90%
+	background-color metal
+	border-radius 50%
+	position absolute
+	left 5%
+	top 5%
+	text-align center
+.no_metal
+	width 90%
+	height 90%
+	background-color no-metal
+	border-radius 50%
+	position absolute
+	left 5%
+	top 5%
+	text-align center
+.metaloide
+	width 90%
+	height 90%
+	background-color metaloide
+	border-radius 50%
+	position absolute
+	left 5%
+	top 5%
+	text-align center
+a
+	background none
+	text-decoration none
+.plus
+	position absolute
+	bottom 0
+	right 0 
+	background-color head
+	width 5.5em
+	height 1.8em
+.plus > a > p
+	color #DDD
+	margin 0
+	padding 6% 12%
+	
+@media screen and (min-width: 768px)
+	.item 
+		font-size 20px
+	.box
+		width 48%
+		display inline-block
+		&:nth-child(odd)
+			margin-right 2%
+	.nombre
+		font-size 2.7em
+		right 1% 
+		top 10%
+@media screen and (min-width: 1100px)
+	.nombre
+		font-size 3.5em
+		right 20%
+		top 8%
+
+
+
+	
+
+
+
